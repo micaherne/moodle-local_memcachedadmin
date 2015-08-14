@@ -13,3 +13,7 @@ function __autoload($class)
 {
     require_once str_replace('_', DIRECTORY_SEPARATOR, $class) . '.php';
 }
+
+// Added for Moodle plugin
+require_once('../../../config.php');
+\local_memcachedadmin\util::override_loader();

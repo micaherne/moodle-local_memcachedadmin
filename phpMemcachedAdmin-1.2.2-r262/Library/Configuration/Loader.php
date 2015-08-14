@@ -26,7 +26,7 @@ class Library_Configuration_Loader
     protected static $_instance = null;
 
     # Configuration file
-    protected static $_iniPath = '/Config/Memcache.php';
+    protected static $_iniPath = './Config/Memcache.php';
 
     # Configuration needed keys
     protected static $_iniKeys = array('stats_api',
@@ -55,9 +55,11 @@ class Library_Configuration_Loader
      */
     protected function __construct()
     {
-        global $CFG;
         # Opening ini file
         self::$_ini = require self::$_iniPath;
+
+        // Added for Moodle plugin
+        self::$_ini['servers'] = \local_memcachedadmin\util::servers();
     }
 
     /**

@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
     <title>phpMemcachedAdmin <?php echo CURRENT_VERSION; ?></title>
-    <link rel="stylesheet" type="text/css" href="<?php echo $PHPMEMCACHEDADMIN_WWW ?>/Public/Styles/Style.css"/>
-    <script type="text/javascript" src="<?php echo $PHPMEMCACHEDADMIN_WWW ?>/Public/Scripts/Script.js"></script>
+    <link rel="stylesheet" type="text/css" href="Public/Styles/Style.css"/>
+    <script type="text/javascript" src="Public/Scripts/Script.js"></script>
 </head>
 <body>
 <div style="margin:0pt auto; width:1000px; clear:both;">

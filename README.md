@@ -1,12 +1,13 @@
 phpMemcachedAdmin Moodle plugin
 ===============================
 
-This is a Moodle plugin which simply packages the excellent [phpMemcachedAdmin] (https://code.google.com/p/phpmemcacheadmin/) tool.
+This is a Moodle plugin which simply packages the excellent [phpMemcachedAdmin] (https://code.google.com/p/phpmemcacheadmin/) tool. It is intended for Moodle setups where memcached is being used as a caching mechanism.
 
 Features:
 
 * Automatically configures the tool to point to the memcached servers or clusters set up in your Moodle cache configuration.
 * Controls access to phpMemcachedAdmin - only Moodle site administrators can use it
+* Supports both memcache and memcached Moodle plugins
 
 Installation
 ------------
